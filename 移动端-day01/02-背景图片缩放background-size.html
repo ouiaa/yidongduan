@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景缩放background-size</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border: 2px solid pink;
+            background: url(images/dog.jpg) no-repeat;
+            /* background-size: 图片宽度 图片高度; */
+            /* background-size: 500px 300px; */
+            /* 1.只写一个参数，默认是宽度，等比例缩放 */
+            /* background-size: 400px; */
+            /* 2.也可以跟百分号，是相对于父盒子来说 */
+            /* background-size: 50%; */
+            /* 3.cover 宽高等比例拉伸，会完全覆盖div盒子，可能有部分背景图片不全 */
+            /* background-size: cover; */
+            /* 4.contain 宽高等比例拉伸至等于父盒子宽或高，铺满父盒子宽高中的一项就停止拉伸 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
