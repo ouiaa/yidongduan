@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马面面</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- swiper需要放在自己css的上面 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <section class="wrap">
+        <!-- 头部 -->
+        <header class="header">黑马面面</header>
+        <!-- 导航栏部分 -->
+        <nav>
+            <a href="javascript:;" class="item">
+                <img src="images/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="images/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="images/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="images/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="images/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="javascript:;" class="item">
+                <img src="images/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- go模块 -->
+        <div class="go">
+            <img src="upload/go.png" alt="">
+        </div>
+    </section>
+    <!-- 就业指导 -->
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <span><img src="images/i2.png" alt=""></span>
+                就业指导
+            </h4>
+            <a href="javascript:;">更多>></a>
+        </div>
+        <!-- 旋转木马轮播图 -->
+        <div class="get-jobs-focus">
+            <div class="swiper-container job-info">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="upload/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="upload/ldh.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;"><img src="upload/3.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <!-- 将箭头放到contanier外，箭头不在盒子约束宽度内 -->
+            <!-- Add Arrows 箭头-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- 充电学习 -->
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <span><img src="images/i1.png" alt=""></span>
+                充电学习
+            </h4>
+            <a href="javascript:;">更多>></a>
+        </div>
+        <!-- 学习轮播图 -->
+        <div class="study">
+            <div class="swiper-container study-info">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="upload/pic1.png" alt="">
+                            <h5>说地道英语，告别中式英语</h5>
+                            <p><em>156</em>人学习</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="upload/pic2.png" alt="">
+                            <h5>思维攻略金字塔思维提升写作能力</h5>
+                            <p><em>125</em>人学习</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="upload/pic1.png" alt="">
+                            <h5>说地道英语，告别中式英语</h5>
+                            <p><em>86</em>人学习</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="upload/pic1.png" alt="">
+                            <h5>说地道英语，告别中式英语</h5>
+                            <p><em>156</em>人学习</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="footer">
+        <a href="javascript:;" class="item">
+            <img src="images/home.png" alt="">
+            <p>首页</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="images/ms.png" alt="">
+            <p>技术面试</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="images/net.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="javascript:;" class="item">
+            <img src="images/user.png" alt="">
+            <p>我的主页</p>
+        </a>
+    </footer>
+
+    <!-- js -->
+    <script>
+        // 自调用函数，就业指导轮播图
+        (function () {
+            var swiper = new Swiper('.job-info', {
+                // 能显示slider的个数
+                // 1+2个半个
+                slidesPerView: 2,
+                // 每个slider之间的距离
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                // 分页器，不需要，删除
+                /* pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }, */
+                // 左右箭头
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }());
+        // 自调用函数，学习轮播图
+        (function () {
+            // 如果有多个轮播图最好修改下swiper-container，防止轮播图之间混用
+            var swiper = new Swiper('.study-info', {
+                // 显示个数，2个多点，大约2.4
+                slidesPerView: 2.4,
+                spaceBetween: 20,
+            });
+        }())
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>根据页面宽度改变背景变色</title>
+    <style>
+        /* 屏幕小于540，背景颜色变为蓝色 */
+        @media screen and (max-width:539px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /* 屏幕小于等于969，大于等于540，背景颜色变为绿色 */
+        /* and可以连用实现between效果 */
+        /* @media screen and (min-width: 540px) and (max-width: 969px) { */
+        /* 利用层叠性改进上行代码 */
+        @media screen and (min-width: 540px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        /* 屏幕大于等于970，背景颜色变为红色 */
+        @media screen and (min-width:970px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

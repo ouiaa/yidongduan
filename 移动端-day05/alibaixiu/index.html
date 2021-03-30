@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- 引入bootstrap样式 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>阿里百秀</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- header -->
+            <header class="col-md-2">
+                <div class="logo">
+                    <a href="javascript:;">
+                        <!--  1.如果进入了超小屏幕下logo里面的图片就隐藏起来 -->
+                        <img src="images/logo.png" alt="" class="hidden-xs">
+                        <!-- 2.我们事先准备好一个盒子在logo里面，它平时是隐藏起来的，只有在超小屏幕下显示 -->
+                        <span class="visible-xs">阿里百秀</span>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="javascript:;" class="glyphicon glyphicon-camera">生活馆</a></li>
+                        <li><a href="javascript:;" class="glyphicon glyphicon-picture">自然汇</a></li>
+                        <li><a href="javascript:;" class="glyphicon glyphicon-phone">科技潮</a></li>
+                        <li><a href="javascript:;" class="glyphicon glyphicon-gift">奇趣事</a></li>
+                        <li><a href="javascript:;" class="glyphicon glyphicon-glass">美食杰</a></li>
+                    </ul>
+                </div>
+            </header>
+            <article class="col-md-7">
+                <!-- news -->
+                <div class="news clearfix">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="upload/lg.png" alt="">
+                                <p>阿里百秀</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="upload/1.jpg" alt="">
+                                <p>奇了 成都一小区护卫长得像马云 市民纷纷求合影</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="upload/2.jpg" alt="">
+                                <p>奇了 成都一小区护卫长得像马云 市民纷纷求合影</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="upload/3.jpg" alt="">
+                                <p>奇了 成都一小区护卫长得像马云 市民纷纷求合影</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="upload/4.jpg" alt="">
+                                <p>奇了 成都一小区护卫长得像马云 市民纷纷求合影</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- publish -->
+                <div class="publish">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <!-- 超小屏幕下，隐藏图片和描述文字模块（除标题和阅读内容留下），同时文字变14px -->
+                            <h3>生活馆 关于指甲的10个健康知识 你知道几个?</h3>
+                            <p class="text-muted hidden-xs">alibabiu发布于2015-11-23</p>
+                            <p class="hidden-xs">指甲是经常容易被人们忽略的身体部位，事实上从指甲的健康状况可以看出一个人的身体健康状况,快来看看10个暗藏在指甲里知识吧!</p>
+                            <p class="text-muted">阅读(2417)评论(1)赞(18) <span class="hidden-xs">
+                                    标签：健康/感染/指甲/疾病/皮肤营养/趣味生活</span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="upload/3.jpg" alt="" class="pic hidden-xs">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <!-- 超小屏幕下，隐藏图片和描述文字模块（除标题和阅读内容留下），同时文字变14px -->
+                            <h3>生活馆 关于指甲的10个健康知识 你知道几个?</h3>
+                            <p class="text-muted hidden-xs">alibabiu发布于2015-11-23</p>
+                            <p class="hidden-xs">指甲是经常容易被人们忽略的身体部位，事实上从指甲的健康状况可以看出一个人的身体健康状况,快来看看10个暗藏在指甲里知识吧!</p>
+                            <p class="text-muted">阅读(2417)评论(1)赞(18) <span class="hidden-xs">
+                                    标签：健康/感染/指甲/疾病/皮肤营养/趣味生活</span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="upload/3.jpg" alt="" class="pic hidden-xs">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- aside -->
+            <aside class="col-md-3">
+                <a href="javascript:;" class="banner">
+                    <img src="upload/zgboke.jpg" alt="">
+                </a>
+                <a href="javascript:;" class="hot">
+                    <span class="btn btn-primary">热搜</span>
+                    <h4 class="text-primary">欢迎加入中国博客联盟</h4>
+                    <p>这里收录国内各个领域的优秀博容，是一个全人工编辑的开放式地在联盟交流和展示平台.....</p>
+                </a>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

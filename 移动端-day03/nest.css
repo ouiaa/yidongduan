@@ -1,0 +1,18 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+div a {
+  color: purple;
+}
+div a:hover {
+  color: red;
+}
+header .logo {
+  color: green;
+}
+header::after {
+  content: "";
+  color: gray;
+}

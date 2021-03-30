@@ -1,0 +1,13 @@
+html {
+  font-size: 50px;
+}
+div {
+  width: 95px;
+  height: 200px;
+  border: 15px solid #ccc;
+  border-radius: 1px;
+}
+img {
+  width: 1.64rem;
+  height: 1.64rem;
+}

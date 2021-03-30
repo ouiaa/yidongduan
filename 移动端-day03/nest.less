@@ -1,0 +1,23 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    // 1.less嵌套，子元素的样式直接写入父元素即可
+    a{
+        color: purple;
+        // 2.如果有伪类、交集选择器、伪元素选择器，内层选择器前面需要加&
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+header{
+    .logo{
+        color: green;
+    }
+    &::after{
+        content: "";
+        color: gray;
+    }
+}

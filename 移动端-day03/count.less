@@ -1,0 +1,19 @@
+@border:5px + 10;
+@font-size:50px;
+
+html{
+    font-size: @font-size;
+}
+div{
+    width: 100px-5;
+    height: 100px * 2;
+    border: @border solid #ccc;
+    border-radius: 2px-1;
+}
+
+img{
+    // 两个运算值只有一个有单位，保留有单位的
+    width: (82/50rem);
+    // 两个运算值都有单位，保留第一个值的单位
+    height:(82rem/50);
+}

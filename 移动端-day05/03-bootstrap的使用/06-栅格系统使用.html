@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9] -->
+    <!--解决ie9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题 -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <!--解决ie9以下浏览器对Css3 Media Query的不识别 -->
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- [endif]-->
+    <!-- 一定不要忘了引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>栅格系统使用</title>
+    <style>
+        [class^="col-lg"] {
+            border: 1px solid pink;
+        }
+
+        .container .row:nth-child(1) {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- 一共12份，平均分给4个盒子，一个盒子占12/4=3份 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+        <div class="row">
+            <!-- 每个盒子所占份数可以不同，份数相加等于12，则占满整个container的宽度 -->
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-1">4</div>
+        </div>
+        <div class="row">
+            <!-- 份数相加小于12，则不占满整个container的宽度，留有空白 -->
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-1">4</div>
+        </div>
+        <div class="row">
+            <!-- 份数相加大于12，则多出点一列会另起一行显示 -->
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-3">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

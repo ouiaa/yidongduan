@@ -1,0 +1,10 @@
+div{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: pink;
+}
+
+div:nth-child(1){
+    background-color: purple;
+}
